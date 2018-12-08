@@ -1,0 +1,60 @@
+<html>
+<head>
+<script>
+function validate()
+{
+var x=document.forms["myform"]["id"].value;
+if(x==null || x=="" )
+{
+  alert("Please fill your Email ID!");
+  return false;
+}
+
+
+
+
+var y=document.forms["myform"]["message"].value;
+if(y==null || y=="" )
+{
+  alert("Please fill your Query !");
+  return false;
+}else
+{return true ;}
+}
+</script>
+
+
+
+
+
+</head>
+<body>
+<table background="images/bg.jpg" border=1 width=100% height=100%>
+<tr> <td width=30% > nbcbs </td>
+ <td width=70% >
+ 
+ 
+ 
+ <center> <h1>We are feeling better to help you !!  </h1> </center>
+ <form name="myform" onSubmit="return validate();" action="Contact.jsp">
+ <center><table border=1 height=300px width=300px>
+ <tr>  <td colspan=2> <center><h1>Send your query </h1></center> </td></tr>
+ <tr> <td><h4>Enter your email </h4></td> <td> <input type=text name=id maxlength=60></td> </tr>
+ <tr> <td><h4>Enter Query </h4></td><td><input type=text name=message maxlength=1000> </td>
+ </tr>
+ <tr> <td colspan=2>
+ <center><input type=submit value="Submit Query"> <input type=reset value="Reset"></center>
+ </form>
+ </td>
+ </tr>
+ 
+ 
+ </table></center>
+ 
+ 
+ 
+ 
+ </td><tr>
+</table>
+</body>
+</html>

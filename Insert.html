@@ -1,0 +1,92 @@
+<html>
+<head>
+
+<script>
+function validate()
+{
+var x=document.forms["myform"]["loc"].value;
+if(x==null || x=="" )
+{
+  alert("Fill completely !");
+  return false;
+}
+
+
+
+
+var y=document.forms["myform"]["rent"].value;
+if(y==null || y=="" )
+{
+  alert("Fill completely");
+  return false;
+}
+
+
+var z=document.forms["myform"]["landlord"].value;
+if(z==null || z=="" )
+{
+  alert("Fill completely");
+  return false;
+}
+
+
+
+var w=document.forms["myform"]["mobile"].value;
+if(w==null || w=="" )
+{
+  alert("Fill completely");
+  return false;
+}
+else
+{return true ;}
+}
+</script>
+</head>
+
+
+<body background="images/bg.jpg">
+
+<center> <a href="index.html"> <img src="images/logout.jpg"> </a> </center>
+
+
+
+
+
+
+
+<form name="myform" onSubmit="return validate();" action="Insert1.jsp">
+<center> <table height=100% width=50% border=1 background="images/bg.jpg">
+<tr> <td colspan=5> <center>Enter New Record ! </center></td> </tr>
+<tr> <td> Room Location </td> <td><input type=text name=loc > </td></tr>
+<tr> <td> Rent</td>  <td> <input type=text name=rent></td></tr>
+<tr> <td> Landlord Name</td>  <td> <input type=text name=landlord></td></tr>
+<tr> <td> Mobile</td>  <td> <input type=text maxlength=10 name=mobile></td></tr>
+<tr> <td> Facility</td>  <td> <input type=text name=facility></td></tr>
+
+<tr> <td>Location </td>
+<td><select name=Place >
+  <option value=pratapNagar> Pratap Nagar </option>
+  <option value=malviyaNagar> Malviya Nagar </option>
+  <option value=tonkPhatak > Tonk Phatak  </option> 
+  <option value=kukas > Kukas  </option> 
+  <option value=sanganer > Sanganer  </option> 
+  <option value=vaishaliNagar >Vaishali Nagar  </option> 
+  <option value=jothwada > Jothwada  </option> 
+  <option value=sindhiCamp > Sindhi Camp  </option> 
+  <option value=triveniNagar> Triveni Nagar  </option> 
+  <option value=mansarowar > Mansarowar  </option> 
+  <option value=jawaharNagar> Jawahar Nagar</option> 
+  <option value=shiprapath> ShipraPath  </option> 
+  <option value=chandpol > Chandpol  </option> 
+  </select></td> </tr>
+  <tr> <td colspan=2> 
+
+  <%@ include file="page.jsp" %>
+  
+  </td>  </tr>
+  <tr> <td colspan=5><center> <input type=submit value="Enter"> <input type=reset value="Reset"></center> </td></tr>
+</table></center>
+</form>
+
+</body>
+</html>

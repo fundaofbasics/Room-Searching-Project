@@ -1,2 +1,2 @@
 # Ticket-Booking
-A Web Project using JSP and SERVLETS .
+A Room Searching Web Project using JSP and SERVLETS .
